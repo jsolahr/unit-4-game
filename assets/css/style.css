@@ -4,17 +4,23 @@ body,html {
     height: 100%;
     width: 100%;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    font-size: 25px;
-}
-.jumbotron {
-    color: rgb(87, 49, 49);
-    text-align: center;  
-    background-color:transparent !important 
+    background-repeat: no-repeat;
+    font-size: 80px;
+    padding-top: 15px;
 }
 h1 {
-    font-size: 100px;
+    color: rgb(87, 49, 49);
+    text-align: center;  
+    background-color:transparent !important;
+    font-size: 120px;
+}
+.lead {
+    color: black;
+    text-align: center;  
+    background-color:transparent !important;
+    font-size: 60px;
+    padding-top: 10px;
 }
 img {
     height: 250px;
@@ -22,24 +28,26 @@ img {
 
 }
 .img-thumbnail {
-    border: 4px solid lightgrey;
+    border: 8px solid  rgb(87, 49, 49);
+}
+.space {
+    height: 10px;
 }
 #Score {
     background-color: white;
-    border: lightgray 2px solid;
+    border: rgb(87, 49, 49) 2px solid;
     text-align: center;
 }
 #Wins, #Losses { 
     background-color: white;
-    border: lightgray 2px solid;
+    border: rgb(87, 49, 49) 2px solid;
     text-align: center;
- 
 }
 #random-number-box {
     background-color: white;
-    border: lightgray 2px solid;
     text-align: center;
 }
 #space {
     height:20px;
 }
+

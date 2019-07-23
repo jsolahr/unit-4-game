@@ -6,6 +6,7 @@ var score = 0;
 var bananaRandom = Math.floor((Math.random() * 11) +1); 
 var grapeRandom = Math.floor((Math.random() * 21) +1); 
 var appleRandom = Math.floor((Math.random() * 11) +1); 
+var peachRandom = Math.floor((Math.random() * 11) +1); 
 var randomNumber = Math.floor((Math.random() * 70) + 30);
 var reset = Math.floor((Math.random() * 70) + 30);
 
@@ -31,6 +32,11 @@ function appleGenerater()
 {
 (appleRandom);
 }
+function peachGenerater() 
+//Gets a new appleRandom # for Apples 
+{
+(peachRandom);
+}
 $("#bananaClick").on("click", function()
 //Everytime user clicks the Banana a randomBanana # appears & adds to the score 
 {
@@ -45,7 +51,10 @@ $("#grapesClick").on("click", function()
 $("#appleClick").on("click", function(){
     score = appleRandom + score;
     });
-
+    //Everytime user clicks the Peach a randomApple # appears & adds to the score 
+$("#peachClick").on("click", function(){
+    score = peachRandom + score;
+    });
 
 //*****************************/MAIN GAME******************************//
 //Onclick for Game to Start
@@ -55,8 +64,9 @@ $(document).ready(function() {
         $("#Score").text("Score: " + score);
         $("#Wins").text("Wins: " + wins);
         $("#Losses").text("Losses: " + losses);
+        $(".lead").text(" ");
         numberGenerater();
-       
+
 if (randomNumber === score) {
     score=0;
     wins++;
@@ -65,6 +75,7 @@ if (randomNumber === score) {
     grapeRandom = Math.floor((Math.random() * 21) +1); 
     appleRandom = Math.floor((Math.random() * 11) +1); 
     randomNumber = Math.floor((Math.random() * 70) + 30);
+    peachRandom = Math.floor((Math.random() * 11) +1); 
 }
 else if (score > randomNumber) {
     score =0;
@@ -74,7 +85,7 @@ else if (score > randomNumber) {
     grapeRandom = Math.floor((Math.random() * 21) +1); 
     appleRandom = Math.floor((Math.random() * 11) +1); 
     randomNumber = Math.floor((Math.random() * 70) + 30);
-
+    peachRandom = Math.floor((Math.random() * 11) +1); 
 }
 });
 });

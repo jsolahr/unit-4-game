@@ -3,12 +3,12 @@
 var wins = 0;
 var losses = 0;
 var score = 0;
-var bananaRandom = Math.floor((Math.random() * 11) +1); 
-var grapeRandom = Math.floor((Math.random() * 21) +1); 
-var appleRandom = Math.floor((Math.random() * 11) +1); 
-var peachRandom = Math.floor((Math.random() * 11) +1); 
-var randomNumber = Math.floor((Math.random() * 70) + 30);
-var reset = Math.floor((Math.random() * 70) + 30);
+var bananaRandom = Math.floor(Math.random() * 13); 
+var grapeRandom = Math.floor(Math.random() * 13); 
+var appleRandom = Math.floor(Math.random() * 13);  
+var peachRandom = Math.floor(Math.random() * 13); 
+var randomNumber = Math.floor((Math.random() * 80) + 40);
+var reset = Math.floor((Math.random() * 80) + 40);
 
 //FUNCTIONS
 //=========================================================================================================
@@ -71,21 +71,21 @@ if (randomNumber === score) {
     score=0;
     wins++;
     alert("You won!");
-    bananaRandom = Math.floor((Math.random() * 11) +1); 
-    grapeRandom = Math.floor((Math.random() * 21) +1); 
-    appleRandom = Math.floor((Math.random() * 11) +1); 
-    randomNumber = Math.floor((Math.random() * 70) + 30);
-    peachRandom = Math.floor((Math.random() * 11) +1); 
+    bananaRandom = Math.floor(Math.random() * 13); 
+    grapeRandom = Math.floor(Math.random() * 13); 
+    appleRandom = Math.floor(Math.random() * 13);  
+    peachRandom = Math.floor(Math.random() * 13); 
+    randomNumber = Math.floor((Math.random() * 80) + 40);
 }
 else if (score > randomNumber) {
     score =0;
     losses++; 
     alert("You Lost!");
-    bananaRandom = Math.floor((Math.random() * 11) +1); 
-    grapeRandom = Math.floor((Math.random() * 21) +1); 
-    appleRandom = Math.floor((Math.random() * 11) +1); 
-    randomNumber = Math.floor((Math.random() * 70) + 30);
-    peachRandom = Math.floor((Math.random() * 11) +1); 
+    bananaRandom = Math.floor(Math.random() * 13); 
+    grapeRandom = Math.floor(Math.random() * 13); 
+    appleRandom = Math.floor(Math.random() * 13);  
+    peachRandom = Math.floor(Math.random() * 13); 
+    randomNumber = Math.floor((Math.random() * 80) + 40);
 }
 });
 });

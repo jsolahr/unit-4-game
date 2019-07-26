@@ -8,7 +8,6 @@ var grapeRandom = Math.floor(Math.random() * 13);
 var appleRandom = Math.floor(Math.random() * 13);  
 var peachRandom = Math.floor(Math.random() * 13); 
 var randomNumber = Math.floor((Math.random() * 80) + 40);
-var reset = Math.floor((Math.random() * 80) + 40);
 
 //FUNCTIONS
 //=========================================================================================================
@@ -68,24 +67,30 @@ $(document).ready(function() {
         numberGenerater();
 
 if (randomNumber === score) {
-    score=0;
     wins++;
+    score = 0;
     alert("You won!");
+    $("#Wins").text("Wins: " + wins);
+    $("#Score").text("Score: " + score);
+    randomNumber = Math.floor((Math.random() * 80) + 40);
+    $("#random-number-box").text(randomNumber);
     bananaRandom = Math.floor(Math.random() * 13); 
     grapeRandom = Math.floor(Math.random() * 13); 
     appleRandom = Math.floor(Math.random() * 13);  
-    peachRandom = Math.floor(Math.random() * 13); 
-    randomNumber = Math.floor((Math.random() * 80) + 40);
+    peachRandom = Math.floor(Math.random() * 13);  
 }
 else if (score > randomNumber) {
-    score =0;
     losses++; 
+    score = 0;
     alert("You Lost!");
+    $("#Losses").text("Losses: " + losses);
+    $("#Score").text("Score: " + score);
+    randomNumber = Math.floor((Math.random() * 80) + 40);
+    $("#random-number-box").text(randomNumber);
     bananaRandom = Math.floor(Math.random() * 13); 
     grapeRandom = Math.floor(Math.random() * 13); 
     appleRandom = Math.floor(Math.random() * 13);  
-    peachRandom = Math.floor(Math.random() * 13); 
-    randomNumber = Math.floor((Math.random() * 80) + 40);
+    peachRandom = Math.floor(Math.random() * 13);  
 }
 });
 });

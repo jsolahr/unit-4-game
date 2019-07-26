@@ -14,11 +14,12 @@ h1 {
     text-align: center;  
     background-color:transparent !important;
     font-size: 120px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 .lead {
     color: black;
     text-align: center;  
-    background-color:transparent !important;
     font-size: 60px;
     padding-top: 10px;
 }
@@ -45,6 +46,7 @@ img {
 }
 #random-number-box {
     background-color: white;
+    border: rgb(87, 49, 49) 2px solid;
     text-align: center;
 }
 #space {

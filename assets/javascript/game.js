@@ -11,26 +11,6 @@ var randomNumber = Math.floor((Math.random() * 80) + 40);
 
 //FUNCTIONS
 //=========================================================================================================
-function bananaGenerator() 
-//Gets a new bananaRandom # for Bananas 
-{
-(bananaRandom);
-}
-function grapeGenerater()
-//Gets a new grapeRandom # for Grapes 
-{
-(grapeRandom);
-} 
-function appleGenerater() 
-//Gets a new appleRandom # for Apples 
-{
-(appleRandom);
-}
-function peachGenerater() 
-//Gets a new appleRandom # for Apples 
-{
-(peachRandom);
-}
 $("#bananaClick").on("click", function()
 //Everytime user clicks the Banana a randomBanana # appears & adds to the score 
 {
@@ -51,7 +31,7 @@ $("#peachClick").on("click", function(){
     });
 
 //*****************************/MAIN GAME******************************//
-//Onclick for Game to Start
+//Onclick for Game toto Start
 
 $(document).ready(function() {
     $("body").on("click", function() {

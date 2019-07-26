@@ -11,11 +11,6 @@ var randomNumber = Math.floor((Math.random() * 80) + 40);
 
 //FUNCTIONS
 //=========================================================================================================
-function numberGenerater()
-///Prints randomNumber into random-number div 
-{    
-    $("#random-number-box").text(randomNumber);
-}
 function bananaGenerator() 
 //Gets a new bananaRandom # for Bananas 
 {
@@ -60,11 +55,11 @@ $("#peachClick").on("click", function(){
 
 $(document).ready(function() {
     $("body").on("click", function() {
+        $("#random-number-box").text(randomNumber);
         $("#Score").text("Score: " + score);
         $("#Wins").text("Wins: " + wins);
         $("#Losses").text("Losses: " + losses);
         $(".lead").text(" ");
-        numberGenerater();
 
 if (randomNumber === score) {
     wins++;

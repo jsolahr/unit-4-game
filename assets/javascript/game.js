@@ -11,28 +11,34 @@ var randomNumber = Math.floor((Math.random() * 80) + 40);
 
 //FUNCTIONS
 //=========================================================================================================
+function resetButtons (){
+    bananaRandom = Math.floor(Math.random() * 13); 
+    grapeRandom = Math.floor(Math.random() * 13); 
+    appleRandom = Math.floor(Math.random() * 13);  
+    peachRandom = Math.floor(Math.random() * 13);  
+}
+
 $("#bananaClick").on("click", function()
 //Everytime user clicks the Banana a randomBanana # appears & adds to the score 
 {
     score = bananaRandom + score;
-    });
+    })
 $("#grapesClick").on("click", function()
 //Everytime user clicks the Banana a randomGrape # appears & adds to the score 
 {
     score = grapeRandom + score;
-    });
+    })
 //Everytime user clicks the Apple a randomApple # appears & adds to the score 
 $("#appleClick").on("click", function(){
     score = appleRandom + score;
-    });
+    })
     //Everytime user clicks the Peach a randomApple # appears & adds to the score 
 $("#peachClick").on("click", function(){
     score = peachRandom + score;
-    });
+    })
 
 //*****************************/MAIN GAME******************************//
 //Onclick for Game toto Start
-
 $(document).ready(function() {
     $("body").on("click", function() {
         $("#random-number-box").text(randomNumber);
@@ -49,10 +55,7 @@ if (randomNumber === score) {
     $("#Score").text("Score: " + score);
     randomNumber = Math.floor((Math.random() * 80) + 40);
     $("#random-number-box").text(randomNumber);
-    bananaRandom = Math.floor(Math.random() * 13); 
-    grapeRandom = Math.floor(Math.random() * 13); 
-    appleRandom = Math.floor(Math.random() * 13);  
-    peachRandom = Math.floor(Math.random() * 13);
+    resetButtons();
 }
 else if (score > randomNumber) {
     losses++; 
@@ -62,10 +65,7 @@ else if (score > randomNumber) {
     $("#Score").text("Score: " + score);
     randomNumber = Math.floor((Math.random() * 80) + 40);
     $("#random-number-box").text(randomNumber);
-    bananaRandom = Math.floor(Math.random() * 13); 
-    grapeRandom = Math.floor(Math.random() * 13); 
-    appleRandom = Math.floor(Math.random() * 13);  
-    peachRandom = Math.floor(Math.random() * 13);  
+    resetButtons();
 }
 });
 });

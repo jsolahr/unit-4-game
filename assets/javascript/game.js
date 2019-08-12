@@ -52,12 +52,12 @@ if (randomNumber === score) {
     bananaRandom = Math.floor(Math.random() * 13); 
     grapeRandom = Math.floor(Math.random() * 13); 
     appleRandom = Math.floor(Math.random() * 13);  
-    peachRandom = Math.floor(Math.random() * 13);  
+    peachRandom = Math.floor(Math.random() * 13);
 }
 else if (score > randomNumber) {
     losses++; 
     score = 0;
-    alert("You Lost!");
+    alert("You lost!");
     $("#Losses").text("Losses: " + losses);
     $("#Score").text("Score: " + score);
     randomNumber = Math.floor((Math.random() * 80) + 40);

@@ -6,8 +6,7 @@ body,html {
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
-    font-size: 80px;
-    padding-top: 15px;
+    font-size: 70px;
 }
 h1 {
     color: rgb(87, 49, 49);
@@ -20,12 +19,12 @@ h1 {
 .lead {
     color: black;
     text-align: center;  
-    font-size: 60px;
+    font-size: 50px;
     padding-top: 10px;
 }
 img {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
 
 }
 .img-thumbnail {

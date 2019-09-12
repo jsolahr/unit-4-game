@@ -25,10 +25,9 @@ h1 {
 img {
     height: 200px;
     width: 200px;
-
 }
 .img-thumbnail {
-    border: 8px solid  rgb(87, 49, 49);
+    border: 4px solid  rgb(87, 49, 49);
 }
 .space {
     height: 10px;

@@ -43,11 +43,12 @@ $("#peachClick").on("click", function(){
 //Onclick for Game toto Start
 $(document).ready(function() {
     $("body").on("click", function() {
+        $(".lead").text(" ");
         $("#random-number-box").text(randomNumber);
         $("#Score").text("Score: " + score);
         $("#Wins").text("Wins: " + wins);
         $("#Losses").text("Losses: " + losses);
-        $(".lead").text(" ");
+        
 
 if (randomNumber === score) {
     wins++;

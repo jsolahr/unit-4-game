@@ -16,7 +16,7 @@ function resetButtons (){
     grapeRandom = Math.floor(Math.random() * 13) +1; 
     appleRandom = Math.floor(Math.random() * 13) +1; 
     peachRandom = Math.floor(Math.random() * 13) +1; 
-};
+}
 
 $("#bananaClick").on("click", function()
 //Everytime user clicks the Banana a randomBanana # appears & adds to the score 
@@ -38,6 +38,7 @@ $("#appleClick").on("click", function(){
 $("#peachClick").on("click", function(){
     score = peachRandom + score;
     });
+    
 
 //*****************************/MAIN GAME******************************//
 //Onclick for Game toto Start
@@ -49,7 +50,6 @@ $(document).ready(function() {
         $("#Wins").text("Wins: " + wins);
         $("#Losses").text("Losses: " + losses);
         
-
 if (randomNumber === score) {
     wins++;
     score = 0;
@@ -63,7 +63,7 @@ if (randomNumber === score) {
 else if (score > randomNumber) {
     losses++; 
     score = 0;
-    alert("You lost!");
+    alert("You Lost!");
     $("#Losses").text("Losses: " + losses);
     $("#Score").text("Score: " + score);
     randomNumber = Math.floor((Math.random() * 80) + 40);

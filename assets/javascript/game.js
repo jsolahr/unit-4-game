@@ -9,6 +9,8 @@ var appleRandom = Math.floor(Math.random() * 13) +1;
 var peachRandom = Math.floor(Math.random() * 13) +1; 
 var randomNumber = Math.floor((Math.random() * 80) + 40);
 
+
+
 //FUNCTIONS
 //=========================================================================================================
 function resetButtons (){
@@ -20,10 +22,10 @@ function resetButtons (){
 
 $("#bananaClick").on("click", function()
 //Everytime user clicks the Banana a randomBanana # appears & adds to the score 
-{
+     {
     score = bananaRandom + score;
     console.log(score);
-    })
+    });
 $("#grapesClick").on("click", function()
 //Everytime user clicks the Banana a randomGrape # appears & adds to the score 
 {
